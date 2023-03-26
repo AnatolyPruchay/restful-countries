@@ -37,6 +37,10 @@ const CardImage = styled.img`
   object-position: center;
   box-shadow: var(--shadow);
 
+  @media (min-width: 360px) {
+    height: 180px;
+  }
+
   @media (min-width: 1024px) {
     height: 130px;
   }
