@@ -1,0 +1,1 @@
+export const loadingCardsMock = [...Array(50).keys()];
