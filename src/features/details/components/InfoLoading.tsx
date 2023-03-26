@@ -5,13 +5,20 @@ export const InfoLoading = (): JSX.Element => {
 
   return (
     <Wrapper>
-      <Skeleton height="100%"/>
+      <StyledSkeleton/>
       <div>
         <Skeleton height={400}/>
       </div>
     </Wrapper>
   );
 };
+
+const StyledSkeleton = styled(Skeleton)`
+  height: 200px;
+  @media (min-width: 1024px) {
+    height: 400px;
+}
+`;
 
 const Wrapper = styled.section`
   margin-top: 3rem;
