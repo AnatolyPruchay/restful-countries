@@ -39,7 +39,8 @@ export enum RecoilLoadableState {
 export enum HTTPError {
   error404 = '404',
   error403 = '403',
-  error500 = '500'
+  error500 = '500',
+  error503 = '503'
 }
 
 export type ErrorMap = Record<HTTPError, string>;

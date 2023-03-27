@@ -2,7 +2,7 @@ import React, {useMemo} from 'react';
 import {useTheme} from '../hooks/useTheme';
 import {SadSmile} from '../../../shared';
 
-export const ThemedSadSmile = (props: React.SVGProps<SVGSVGElement>) => {
+export const ThemedSadSmile = (props: React.SVGProps<SVGElement>) => {
   const [theme] = useTheme();
 
   const color = useMemo(() => {

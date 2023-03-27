@@ -6,6 +6,6 @@ export const mapAxiosError = (axiosError: string): string => {
     case axiosError.includes(HTTPError.error404):
       return errorMap[HTTPError.error404];
     default:
-      return '';
+      return axiosError;
   }
 }
